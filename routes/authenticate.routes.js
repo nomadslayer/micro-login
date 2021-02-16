@@ -22,14 +22,14 @@ const router = express.Router();
  *        content:
  *          application/json:
  *            schema:
- *              $ref: '#/components/schemas/register'
+ *              $ref: 'https://github.com/nomadslayer/micro-login/blob/develop/models/register.js'
  *      responses:
  *         "200":
  *            description: A successful response
  *            content:
  *              application/json:
  *                schema:
- *                  $ref: '#/components/schemas/register'    
+ *                  $ref: 'https://github.com/nomadslayer/micro-login/blob/develop/models/register.js#'    
  */
 
 router.route('/register')
@@ -47,14 +47,14 @@ router.route('/register')
  *        content:
  *          application/json:
  *            schema:
- *              $ref: '#/components/schemas/login'
+ *              $ref: 'https://github.com/nomadslayer/micro-login/blob/develop/models/login.js'
  *      responses:
  *         "200":
  *            description: A successful response
  *            content:
  *              application/json:
  *                schema:
- *                  $ref: '#/components/schemas/login'     
+ *                  $ref: 'https://github.com/nomadslayer/micro-login/blob/develop/models/login.js'     
  */
 
 router.route('/login')
