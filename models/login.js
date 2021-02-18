@@ -1,6 +1,6 @@
  /**
  * @swagger
- *  components:
+ * components:
  *    schemas:
  *      Login:
  *        type: object

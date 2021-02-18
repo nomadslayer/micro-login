@@ -35,12 +35,13 @@ const router = express.Router();
 router.route('/register')
   .post(authCtrl.register);
 
+
 /**
  * @swagger
  * paths:
  *  /auth/login:
  *   post:
- *      summary:  Endpoint for registering user
+ *      summary:  Endpoint for login
  *      tags: [Register]
  *      requestBody:
  *        required: true

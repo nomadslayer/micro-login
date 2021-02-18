@@ -13,10 +13,6 @@ app.use(morgan('combined'));
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
-app.use('/auth', authRoutes);
-app.use('/user', userRoutes);
-
 app.use(function (req, res, next) {
 
   // Website you wish to allow to connect
@@ -36,7 +32,9 @@ app.use(function (req, res, next) {
   next();
 });
 
-const port = 3000;
-app.listen(port, () => {
-  console.log(`Running on port ${port}`);
+app.use('/auth', authRoutes);
+app.use('/user', userRoutes);
+
+app.listen(process.env.PORT || 4000, () => {
+  console.log('Server up and running!');
 });

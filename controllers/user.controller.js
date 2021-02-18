@@ -41,7 +41,7 @@ const getAllUsers = (req, res) => {
         }
   
         return db.from('profiles')
-          .select('name', 'email')
+          .select('name')
           .then((data) => {
               return res.json(data);
           })
